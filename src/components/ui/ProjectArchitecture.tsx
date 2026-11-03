@@ -4,7 +4,8 @@ const flows: Record<string, { label: string; detail: string }[]> = {
   'devhub': [
     { label: 'Web & Windows workspace', detail: 'Next.js and React interface, with an Electron desktop app' },
     { label: 'FastAPI & PostgreSQL', detail: 'Private projects, team messages, tasks, and shared community discussions' },
-    { label: 'Integrations & background worker', detail: 'Read-only GitHub, Vercel, and Render imports, website checks, and reminders' },
+    { label: 'GitHub & deployment controls', detail: 'Create and link repositories through GitHub App, connect Vercel or Render, and manage manual or automatic deployments' },
+    { label: 'Activity & synchronization', detail: 'Track deployed commits, unified notifications, and synchronization progress with pause and resume controls' },
   ],
   'forme-commerce': [
     { label: 'Storefront & owner dashboard', detail: 'Next.js with React, TypeScript, and Zustand browser state' },

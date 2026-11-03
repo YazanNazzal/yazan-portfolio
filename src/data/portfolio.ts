@@ -401,8 +401,8 @@ export const portfolioData: PortfolioData = {
     {
       "id": "devhub",
       "title": "DevHub — Developer Workspace",
-      "description": "A developer command center for web and Windows, combining project management, repositories, deployments, monitoring, team messaging, and community discussions.",
-      "longDescription": "DevHub gives developers a private workspace on the web and through an Electron desktop app for Windows. Built with Next.js, React, TypeScript, FastAPI, and PostgreSQL, it supports GitHub OAuth sign-in and read-only integrations with GitHub, Vercel, and Render. Developers can review synchronized repositories and published sites, run website health checks, organize tasks in Kanban or list views, write autosaving Markdown notes, and manage clients. Teams can accept project invitations, assign work, exchange private project messages, and comment on tasks. A separate community space lets signed-in members share questions and insights, reply in Markdown, search discussions, and mark threads as resolved while private workspace records stay isolated. A Python worker handles scheduled imports, health checks, and reminders while the app is closed. The Windows x64 installer connects to the hosted service and requires internet and a DevHub account, with no local database or developer tools needed; updates are manual.",
+      "description": "A developer workspace for web and Windows that connects projects, GitHub repositories, and Vercel or Render deployments, with publishing controls and unified commit and deployment notifications.",
+      "longDescription": "DevHub brings project management, code, and hosting into one private workspace on the web and through an Electron desktop app for Windows. Built with Next.js, React, TypeScript, FastAPI, and PostgreSQL, it supports GitHub OAuth sign-in and GitHub App connections for all users without manually copying tokens. Developers can create GitHub repositories directly in DevHub and automatically link them to projects, connect repositories to Vercel or Render, and manage manual and automatic deployments. Deployment views show the current status and deployed commit, while unified notifications bring together commits and deployment results with color-coded platform badges and timestamps that refresh every second. Filters for projects, repositories, and commits, plus direct links to code changes, make activity easier to follow. Synchronization shows its stages and progress and can be paused and resumed. Developers can also run website health checks, organize tasks in Kanban or list views, write autosaving Markdown notes, and manage clients. Teams can accept project invitations, assign work, exchange private project messages, and comment on tasks. A separate community space supports questions, insights, Markdown replies, search, and resolved threads. A Python worker handles scheduled imports, health checks, and reminders while the app is closed. Refined colors, navigation, and responsive layouts make project information easier to reach across web and Windows.",
       "technologies": [
         "Next.js",
         "FastAPI",
@@ -422,15 +422,20 @@ export const portfolioData: PortfolioData = {
       "desktopUrl": "https://github.com/YazanNazzal/DevHub-Releases/releases/download/v0.1.3/DevHub-Setup-0.1.3-x64.exe",
       "featured": true,
       "highlights": [
-        "Electron desktop app for Windows x64 with a public installer and access to the hosted workspace",
+        "Windows desktop app with access to the same hosted workspace as the web app",
+        "Create GitHub repositories inside DevHub and automatically link them to projects",
+        "GitHub App connections for all users without manually copying tokens",
+        "Connect repositories to Vercel or Render and view deployment status and the currently deployed commit",
+        "Manage manual and automatic deployments directly from the workspace",
+        "Unified commit and deployment notifications with color-coded platform badges and timestamps refreshed every second",
+        "Filter projects, repositories, and commits, with direct links to code changes",
+        "Synchronization with visible stages, progress tracking, and pause and resume controls",
         "Community questions and insights with Markdown replies, search, author controls, and resolved threads",
         "Team invitations, task assignments, private project messaging, and task comments",
         "GitHub OAuth sign-in with private workspaces and per-user data isolation",
-        "Read-only GitHub, Vercel, and Render integrations with resumable synchronization",
-        "Published sites and deployment history collected across connected hosting providers",
         "Website health checks with response-time charts, incident history, and in-app alerts",
         "Kanban and list task views, autosaving Markdown notes, and client management",
-        "Light, dark, and system themes with responsive layouts",
+        "Refined colors and navigation, with responsive layouts and light, dark, and system themes",
         "Optional background worker for scheduled checks, synchronization, and reminders"
       ]
     },
